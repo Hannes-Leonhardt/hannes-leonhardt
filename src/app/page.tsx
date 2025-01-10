@@ -67,7 +67,7 @@ function Lightformers({ positions = [2, 0, 2, 0, 2, 0, 2, 0] }) {
     <>
       {/* Deckenbeleuchtung */}
       <Lightformer intensity={0.75} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={[10, 10, 1]} />
-      <group rotation={[0, 0.5, 0]}>
+      <group rotation={[0, 2, 0]}>
         <group ref={group}>
           {positions.map((x, i) => (
             <Lightformer
