@@ -121,7 +121,7 @@ export default function Home() {
           intensity={2}
           shadow-bias={-0.0001}
         />
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={1} />
         
         {/* Porsche-Modell */}
         <Porsche scale={1.6} position={[-0.5, -0.18, 0]} rotation={[0, Math.PI / 5, 0]} />
