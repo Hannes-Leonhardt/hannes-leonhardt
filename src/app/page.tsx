@@ -8,13 +8,6 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 
-function MyModel() {
-  const gltf = useGLTF("/models/911-transformed.glb"); // Einfacher Zugriff über `public`
-  
-  // Scale das Modell
-  return <primitive object={gltf.scene} scale={[0.5, 0.5, 0.5]} />;
-}
-
 export default function Home() {
   return (
     <section>
@@ -36,7 +29,6 @@ export default function Home() {
         </h2>
         <div className="w-full h-96 border rounded-lg shadow-lg bg-white">
           <Canvas>
-            <MyModel />
             <ambientLight intensity={0.5} />
             <pointLight position={[10, 10, 10]} />
             <OrbitControls />
