@@ -1,11 +1,22 @@
 'use client';
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+
+function MyModel() {
+  const gltf = useGLTF("/models/scene.glb"); // Einfacher Zugriff über `public`
+  
+  // Scale das Modell
+  return <primitive object={gltf.scene} scale={[0.5, 0.5, 0.5]} />;
+}
 
 export default function Home() {
   return (
     <section>
+      <Button>Click me!</Button>
+      <Switch />
       {/* Hero Section */}
       <div className="text-center my-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
@@ -21,14 +32,18 @@ export default function Home() {
           3D-Projekt
         </h2>
         <div className="w-full h-96 border rounded-lg shadow-lg bg-white">
-          <Canvas>
+          <Canvas
+            camera={{
+              position: [100, 150, 100], // Standardposition der Kamera (etwas herausgezoomt)
+              fov: 75, // Field of View (Sichtfeld)
+            }}
+          >
+            <MyModel />
             <ambientLight intensity={0.5} />
             <pointLight position={[10, 10, 10]} />
-            <mesh rotation={[0.4, 0.2, 0]}>
-              <boxGeometry args={[1, 1, 1]} />
-              <meshStandardMaterial color="orange" />
-            </mesh>
-            <OrbitControls />
+            <OrbitControls
+              enableZoom={true} // Zoom aktivieren
+            />
           </Canvas>
         </div>
       </div>
