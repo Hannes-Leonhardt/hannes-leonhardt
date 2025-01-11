@@ -7,30 +7,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-900 font-sans">
-        {/* Navigation */}
-        <header className="bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg">
-          <div className="container mx-auto flex justify-between items-center py-4 px-6">
-            <h1 className="text-xl font-bold">Hannes Leonhardt - Portfolio</h1>
+      <body className="flex flex-col min-h-screen">
+        {/* Navbar */}
+        <header className="bg-gray-800 text-white py-4">
+          <div className="container mx-auto flex justify-between items-center">
+            <h1 className="text-2xl font-bold">Hannes Leonhardt</h1>
             <nav>
-              <ul className="flex space-x-6">
+              <ul className="flex space-x-4">
                 <li>
-                  <a href="/projects" className="hover:text-yellow-300">
+                  <a href="#about" className="hover:text-gray-400">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" className="hover:text-gray-400">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="#models" className="hover:text-yellow-300">
-                    Models
-                  </a>
-                </li>
-                <li>
-                  <a href="#work-experience" className="hover:text-yellow-300">
-                    Work Experience
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="hover:text-yellow-300">
+                  <a href="#contact" className="hover:text-gray-400">
                     Contact
                   </a>
                 </li>
@@ -40,11 +35,11 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="container mx-auto px-6 py-8">{children}</main>
+        <main className="flex-grow container mx-auto my-12">{children}</main>
 
         {/* Footer */}
-        <footer className="bg-gray-900 text-white text-center py-4">
-          <p>© 2025 Hannes Leonhardt. Alle Rechte vorbehalten.</p>
+        <footer className="bg-gray-800 text-white text-center py-4">
+          <p>© 2025 Hannes Leonhardt. All rights reserved.</p>
         </footer>
       </body>
     </html>
