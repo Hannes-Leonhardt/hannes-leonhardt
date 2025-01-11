@@ -6,8 +6,9 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="text-center mb-16">
         <h2 className="text-4xl font-bold mb-4">Who I Am</h2>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <p className="text-lg text-gray-700 leading-relaxed">
-          Hi, I&apos;m Hannes Leonhardt. I study Technical Design and work at the intersection
+          Hi, I'm Hannes Leonhardt. I study Technical Design and work at the intersection
           of technology and creativity. I love designing innovative solutions and building
           things that inspire people.
         </p>
