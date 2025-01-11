@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 
 export default function RootLayout({
@@ -11,23 +12,26 @@ export default function RootLayout({
         {/* Navbar */}
         <header className="bg-gray-800 text-white py-4">
           <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-2xl font-bold">Hannes Leonhardt</h1>
+            {/* Logo mit Link zur Startseite */}
+            <Link href="/" className="text-2xl font-bold hover:text-gray-400">
+              Hannes Leonhardt
+            </Link>
             <nav>
               <ul className="flex space-x-4">
                 <li>
-                  <a href="#about" className="hover:text-gray-400">
+                  <Link href="#about" className="hover:text-gray-400">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#projects" className="hover:text-gray-400">
+                  <Link href="#projects" className="hover:text-gray-400">
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-gray-400">
+                  <Link href="#contact" className="hover:text-gray-400">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
