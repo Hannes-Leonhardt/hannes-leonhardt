@@ -1,5 +1,4 @@
 import "./globals.css";
-import CookieBanner from "@/components/CookieBanner";
 
 export default function RootLayout({
   children,
@@ -45,8 +44,6 @@ export default function RootLayout({
           <p>© 2025 Hannes Leonhardt. All rights reserved.</p>
         </footer>
 
-        {/* Cookie-Banner */}
-        <CookieBanner />
       </body>
     </html>
   );
