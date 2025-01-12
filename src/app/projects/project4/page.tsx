@@ -1,4 +1,6 @@
 
+'use client';
+
 export default function Project4Page() {
     return (
       <div className="p-8">
