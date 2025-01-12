@@ -10,7 +10,7 @@ export default function Project1Page() {
         {/* Beschreibung */}
         <div className="p-6">
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-            About Project 3
+            About Project 1
           </h2>
           <p className="text-gray-600 leading-relaxed">
             This project demonstrates innovative solutions in the field of technical design. 
