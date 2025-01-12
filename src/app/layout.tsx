@@ -14,7 +14,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         {/* Navbar */}
-        <header className="bg-gray-800 text-white py-4">
+        <header
+          className="text-white py-4"
+          style={{
+            background: "linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to))",
+          }}
+        >
           <div className="container mx-auto flex justify-between items-center px-4">
             {/* Logo */}
             <a href="/" className="text-2xl font-bold">
@@ -23,13 +28,13 @@ export default function RootLayout({
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-4">
-              <a href="#about" className="hover:text-gray-400">
+              <a href="#about" className="hover:text-gray-200">
                 About Me
               </a>
-              <a href="#projects" className="hover:text-gray-400">
+              <a href="#projects" className="hover:text-gray-200">
                 Projects
               </a>
-              <a href="#contact" className="hover:text-gray-400">
+              <a href="#contact" className="hover:text-gray-200">
                 Contact
               </a>
             </nav>
@@ -63,24 +68,29 @@ export default function RootLayout({
 
           {/* Mobile Dropdown Menu */}
           {menuOpen && (
-            <div className="md:hidden bg-gray-800 text-white px-4 pb-4">
+            <div
+              className="md:hidden text-white px-4 pb-4"
+              style={{
+                background: "linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to))",
+              }}
+            >
               <a
                 href="#about"
-                className="block py-2 hover:text-gray-400"
+                className="block py-2 hover:text-gray-200"
                 onClick={() => setMenuOpen(false)}
               >
                 About Me
               </a>
               <a
                 href="#projects"
-                className="block py-2 hover:text-gray-400"
+                className="block py-2 hover:text-gray-200"
                 onClick={() => setMenuOpen(false)}
               >
                 Projects
               </a>
               <a
                 href="#contact"
-                className="block py-2 hover:text-gray-400"
+                className="block py-2 hover:text-gray-200"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact
@@ -93,7 +103,12 @@ export default function RootLayout({
         <main className="flex-grow container mx-auto my-12 px-4">{children}</main>
 
         {/* Footer */}
-        <footer className="bg-gray-800 text-white text-center py-4">
+        <footer
+          className="text-white text-center py-4"
+          style={{
+            background: "linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to))",
+          }}
+        >
           <p>© 2025 Hannes Leonhardt. All rights reserved.</p>
         </footer>
       </body>

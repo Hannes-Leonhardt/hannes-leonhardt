@@ -6,6 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --gradient-from: #f97316; /* orange-500 */
+  --gradient-via: #ea580c;  /* orange-600 */
+  --gradient-to: #c2410c;   /* orange-700 */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -9,9 +9,7 @@ export default function Home() {
       <section id="about" className="text-center mb-16 px-4">
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <p className="text-lg text-gray-700 leading-relaxed">
-          Hi, I am Hannes Leonhardt. I study Technical Design and work at the intersection
-          of technology and creativity. I love designing innovative solutions and building
-          things that inspire people.
+          As a passionate design enthusiast currently in my 5th semester of studying Technical Design, I am dedicated to crafting projects that balance functionality and simplicity. My pragmatic approach focuses on innovative solutions where every detail serves a purpose. I thrive in collaborative environments, exchanging ideas and working with determination to see projects through to successful completion.
         </p>
       </section>
 
