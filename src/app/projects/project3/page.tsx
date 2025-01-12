@@ -1,3 +1,4 @@
+'use client';
 
 export default function Project3Page() {
     return (
