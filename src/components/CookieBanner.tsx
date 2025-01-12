@@ -1,20 +1,26 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function CookieBanner() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Überprüfe im Browser, ob die Cookies akzeptiert wurden
+    if (typeof window !== 'undefined' && localStorage.getItem('cookiesAccepted') !== 'true') {
+      setIsVisible(true);
+    }
+  }, []);
 
   const handleAccept = () => {
     // Speichere die Zustimmung in den Local Storage
-    localStorage.setItem('cookiesAccepted', 'true');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cookiesAccepted', 'true');
+    }
     setIsVisible(false);
   };
 
-  // Überprüfe, ob der Cookie-Banner bereits akzeptiert wurde
-  if (!isVisible || localStorage.getItem('cookiesAccepted') === 'true') {
-    return null;
-  }
+  if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 z-50">
