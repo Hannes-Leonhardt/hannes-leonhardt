@@ -1,5 +1,5 @@
-import Link from "next/link";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 export default function RootLayout({
   children,
@@ -12,26 +12,25 @@ export default function RootLayout({
         {/* Navbar */}
         <header className="bg-gray-800 text-white py-4">
           <div className="container mx-auto flex justify-between items-center">
-            {/* Logo mit Link zur Startseite */}
-            <Link href="/" className="text-2xl font-bold hover:text-gray-400">
+            <a href="/" className="text-2xl font-bold">
               Hannes Leonhardt
-            </Link>
+            </a>
             <nav>
               <ul className="flex space-x-4">
                 <li>
-                  <Link href="#about" className="hover:text-gray-400">
-                    About
-                  </Link>
+                  <a href="#about" className="hover:text-gray-400">
+                    About Me
+                  </a>
                 </li>
                 <li>
-                  <Link href="#projects" className="hover:text-gray-400">
+                  <a href="#projects" className="hover:text-gray-400">
                     Projects
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="#contact" className="hover:text-gray-400">
+                  <a href="#contact" className="hover:text-gray-400">
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -45,6 +44,9 @@ export default function RootLayout({
         <footer className="bg-gray-800 text-white text-center py-4">
           <p>© 2025 Hannes Leonhardt. All rights reserved.</p>
         </footer>
+
+        {/* Cookie-Banner */}
+        <CookieBanner />
       </body>
     </html>
   );
