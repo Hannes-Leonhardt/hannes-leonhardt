@@ -22,20 +22,20 @@ export default function Project2Page() {
     <div className="p-8">
       <h1 className="text-4xl font-bold mb-4">Project 2</h1>
       <p className="text-lg text-gray-700 leading-relaxed mb-8">
-        This project showcases a 3D model of a walker. The model demonstrates creativity and attention to detail.
+        This project is inspired by Theo Jansen’s Strandbeest, known for their elegant, wind-powered movement. While not wind-driven itself, the walker captures the mechanical ingenuity and organic motion that characterize Jansen’s creations. Designed for a contest, this self-propelled model is constructed using 3D-printed parts, ensuring easy assembly without requiring additional tools. The project highlights creativity, precision, and a deep appreciation for kinetic design.
       </p>
 
-      <div className="w-full h-[500px] bg-gray-200 rounded-lg overflow-hidden">
+      <div className="w-full h-[1000px] bg-gray-200 rounded-lg overflow-hidden">
         <Canvas shadows camera={{ position: [0, 0.5, 0.5], fov: 50 }}>
           {/* Ambient and Directional Lighting */}
-          <ambientLight intensity={0.5} />
+          <ambientLight intensity={2} />
           <directionalLight
             position={[10, 10, 10]}
             intensity={1}
             castShadow
             shadow-mapSize-width={2048} // Increase shadow map resolution
             shadow-mapSize-height={2048} // Higher resolution for sharper shadows
-            
+
           />
 
           {/* Floor */}
@@ -48,10 +48,12 @@ export default function Project2Page() {
           <WalkerModel />
 
           {/* Orbit Controls */}
-          <OrbitControls 
-          // zoome standardmäßig auf das Modell
-          autoRotate
-          autoRotateSpeed={0.15}
+          <OrbitControls
+            // zoome standardmäßig auf das Modell
+            autoRotate
+            autoRotateSpeed={0.15}
+            minDistance={0.3}
+            enablePan={true}
           />
         </Canvas>
       </div>
