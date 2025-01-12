@@ -27,7 +27,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <p className="mt-2 text-gray-700 font-semibold">Project 1</p>
+            <p className="mt-2 text-gray-700 font-semibold">dyson handmixer</p>
           </a>
           {/* Image 2 */}
           <a href="/projects/project2" className="group">
@@ -40,7 +40,7 @@ export default function Home() {
                 style={{ objectPosition: '10% 100%' }} // Verschiebe das Bild manuell
               />
             </div>
-            <p className="mt-2 text-gray-700 font-semibold">Project 2</p>
+            <p className="mt-2 text-gray-700 font-semibold">walker</p>
           </a>
           {/* Image 3 */}
           <a href="/projects/project3" className="group">
@@ -53,7 +53,7 @@ export default function Home() {
                 style={{ objectPosition: '80% 50%' }} // Verschiebe das Bild manuell
               />
             </div>
-            <p className="mt-2 text-gray-700 font-semibold">Project 3</p>
+            <p className="mt-2 text-gray-700 font-semibold">sustainable bikeframe</p>
           </a>
           {/* Image 4 */}
           <a href="/projects/project4" className="group">
@@ -66,7 +66,7 @@ export default function Home() {
                 style={{ objectPosition: '30% 10%' }} // Verschiebe das Bild manuell
               />
             </div>
-            <p className="mt-2 text-gray-700 font-semibold">Project 4</p>
+            <p className="mt-2 text-gray-700 font-semibold">sculpture</p>
           </a>
         </div>
       </section>
