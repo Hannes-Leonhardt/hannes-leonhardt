@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 export default function Project1Page() {
   return (
@@ -11,11 +12,13 @@ export default function Project1Page() {
       {/* Inhalt */}
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Bild */}
-        <div className="w-full">
-          <img
+        <div className="w-full relative aspect-w-16 aspect-h-9">
+          <Image
             src="/images/project3.png"
             alt="Project 1"
-            className="w-full h-auto"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
 
@@ -25,8 +28,9 @@ export default function Project1Page() {
             About Project 3
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            This project demonstrates innovative solutions in the field of technical design. 
-            With a focus on functionality and aesthetics, it bridges the gap between technology and creativity.
+            This project demonstrates innovative solutions in the field of technical design.
+            With a focus on functionality and aesthetics, it bridges the gap between technology
+            and creativity.
           </p>
         </div>
       </div>

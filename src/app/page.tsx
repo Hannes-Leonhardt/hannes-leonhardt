@@ -8,7 +8,7 @@ export default function Home() {
       <section id="about" className="text-center mb-16">
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <p className="text-lg text-gray-700 leading-relaxed">
-          Hi, I'm Hannes Leonhardt. I study Technical Design and work at the intersection
+          Hi, I&apos;m Hannes Leonhardt. I study Technical Design and work at the intersection
           of technology and creativity. I love designing innovative solutions and building
           things that inspire people.
         </p>
@@ -17,13 +17,13 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="text-center mb-16">
         <h2 className="text-4xl font-bold mb-8">My Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
           {/* Image 1 */}
           <a href="/projects/project1" className="group">
-            <div className="w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
+            <div className="w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
                 src="/images/project3.png"
-                alt="Project 1"
+                alt="Preview of Project 1"
                 fill
                 className="object-cover"
               />
@@ -32,10 +32,10 @@ export default function Home() {
           </a>
           {/* Image 2 */}
           <a href="/projects/project2" className="group">
-            <div className="w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
+            <div className="w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
                 src="/images/project1.png"
-                alt="Project 2"
+                alt="Preview of Project 2"
                 fill
                 className="object-cover"
               />
@@ -44,10 +44,10 @@ export default function Home() {
           </a>
           {/* Image 3 */}
           <a href="/projects/project3" className="group">
-            <div className="w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
+            <div className="w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
                 src="/images/project1.png"
-                alt="Project 3"
+                alt="Preview of Project 3"
                 fill
                 className="object-cover"
               />
@@ -56,10 +56,10 @@ export default function Home() {
           </a>
           {/* Image 4 */}
           <a href="/projects/project4" className="group">
-            <div className="w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
+            <div className="w-full aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
                 src="/images/project1.png"
-                alt="Project 4"
+                alt="Preview of Project 4"
                 fill
                 className="object-cover"
               />
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="text-center mt-16">
+      <section id="contact" className="text-center mt-16 px-4">
         <h2 className="text-4xl font-bold mb-8">Contact</h2>
         <div className="flex flex-col items-center space-y-4">
           {/* E-Mail */}
