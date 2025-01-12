@@ -23,7 +23,7 @@ export default function Home() {
           <a href="/projects/project1" className="group">
             <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
-                src="/images/project3.png"
+                src="/images/project1.png"
                 alt="Project 1"
                 fill
                 className="object-cover"
@@ -35,10 +35,11 @@ export default function Home() {
           <a href="/projects/project2" className="group">
             <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
-                src="/images/project3.png"
+                src="/images/project2.png"
                 alt="Project 2"
                 fill
                 className="object-cover"
+                style={{ objectPosition: '10% 100%' }} // Verschiebe das Bild manuell
               />
             </div>
             <p className="mt-2 text-gray-700 font-semibold">Project 2</p>
@@ -51,6 +52,7 @@ export default function Home() {
                 alt="Project 3"
                 fill
                 className="object-cover"
+                style={{ objectPosition: '80% 50%' }} // Verschiebe das Bild manuell
               />
             </div>
             <p className="mt-2 text-gray-700 font-semibold">Project 3</p>
@@ -59,10 +61,11 @@ export default function Home() {
           <a href="/projects/project4" className="group">
             <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg transition-transform transform group-hover:scale-105">
               <Image
-                src="/images/project3.png"
+                src="/images/project4.jpg"
                 alt="Project 4"
                 fill
                 className="object-cover"
+                style={{ objectPosition: '30% 10%' }} // Verschiebe das Bild manuell
               />
             </div>
             <p className="mt-2 text-gray-700 font-semibold">Project 4</p>
